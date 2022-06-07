@@ -49,7 +49,62 @@
                 <textarea placeholder="Write your message here..." id="Comment" cols="30" rows="10"></textarea>
             <br>
             <br>
+            
             <input type="submit" value="Submit">
+            <style>
+                .dontsubmit {
+                    background-color: rgb(211, 71, 29);
+                    color: rgb(255, 255, 255);
+                    border: none;
+                    height: 50px;
+                    width: 120px;
+                    border-radius: 100px;
+                    cursor: pointer;
+                }
+
+                .dontsubmit:hover {
+                    background-color: black;
+                    color: red;
+
+                }
+
+
+                .maybesubmit {
+                    background-color: rgba(139, 70, 204, 0.733);
+                    border-color: blanchedalmond;
+                    border-radius: 10px;
+                    border: 5ch;
+                    border-width: 50px; 
+                    height: 50px;
+                    width: 125px;
+                    border-radius: 50px;
+                    color: rgb(0, 81, 255);
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-style: oblique;
+                    font-size: 8px;
+                    transition: opacity: 0.15s;
+                }
+
+                .maybesubmit:hover {
+                    background-color: rgb(81, 219, 47);
+                    opacity: 0.5;
+                    color: rgb(241, 91, 255);
+                }
+
+                .maybesubmit:active{
+                    background-color: rgb(250, 120, 250);
+                }
+            </style>
+            <button class="dontsubmit">
+                Don't submit
+            </button>
+            
+            
+            <button class="maybesubmit">
+                Maybe submit
+            </button>
+            
 
         </form>
     </main>
